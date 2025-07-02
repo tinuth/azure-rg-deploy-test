@@ -1,2 +1,2 @@
-resource_group_name  = "demogit-rg-01"
+resource_group_name  = "demogit-rg-02"
 location             = "Central India"
