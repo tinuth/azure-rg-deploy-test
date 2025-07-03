@@ -2,7 +2,7 @@ name: Terraform Plan and Apply Pipeline or workflow
 on:
   push:
     branches:
-      - feature/resource-group
+      - master
     paths:
       - 'env/dev/app1-rg_demo/**'
 
@@ -43,5 +43,5 @@ jobs:
         run: terraform plan -var-file="terraform.tfvars"
 
       - name: Terraform Apply
-        if: github.ref == 'refs/heads/feature/resource-group'
+        if: github.ref == 'refs/heads/master'
         run: terraform apply -auto-approve -var-file="terraform.tfvars"
