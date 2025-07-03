@@ -2,7 +2,7 @@ name: Terraform Plan and Apply Pipeline or workflow
 on:
   push:
     branches:
-      - main
+      - master
     paths:
       - 'env/dev/app1-rg_demo/**'
 
