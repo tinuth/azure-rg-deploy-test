@@ -1,6 +1,6 @@
 
 variable "name" {
-  description  =  "This is variable name defination for module resourc3_group"
+  description  =  "This is variable name defination for module resource_group"
   type         =  string
 }
 variable "location"{
